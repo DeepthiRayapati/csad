@@ -11,12 +11,12 @@ def job_run(dunsnumber):
 		       # easy job for zos:			   
 			   print (dunsnumber)
 			   print (type(dunsnumber))
-			   if os.path.isfile("duns.txt"):
-				   os.remove("duns.txt")
+			   #if os.path.isfile("duns.txt"):
+				#   os.remove("duns.txt")
     
-			   file = open('duns.txt','w')
-			   file.write(dunsnumber)
-			   file.close() 
+			   #file = open('duns.txt','w')
+			   #file.write(dunsnumber)
+			   #file.close() 
 			   # UPLOAD ASCII FORMAT TEXT	
 			   # Myzftp.upload_text('duns.txt', 'BPO.DAT.PU.GDMI.INPUT', sitecmd='')
 
