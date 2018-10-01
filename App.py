@@ -13,7 +13,7 @@ class Example(QWidget):
         self.loading()
     # loading image                
     def loading(self):
-        splash_pix = QPixmap('img/bee.jpg')
+        splash_pix = QPixmap('img/Koala.jpg')
         splash = QSplashScreen(splash_pix, QtCore.Qt.WindowStaysOnTopHint)
         splash.show()
         time.sleep(1)    
