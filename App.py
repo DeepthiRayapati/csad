@@ -1,5 +1,5 @@
 import sys
-from PyQt5.QtWidgets import QWidget, QMessageBox, QApplication,QSplashScreen,QLabel
+from PyQt5.QtWidgets import QWidget, QMessageBox, QApplication,QSplashScreen,QLabel,QPushButton
 from PyQt5.QtGui import QPixmap
 from PyQt5 import QtCore
 import jclftp
@@ -20,11 +20,17 @@ class Example(QWidget):
         self.initUI()
 
     def initUI(self):           	        
-        self.setGeometry(300, 300, 250, 150)        	
+        self.setGeometry(300, 300, 250, 150)    
+        self.button = QPushButton('Uttam', self)  
+        self.button.setToolTip('This is an example button') 
+        self.button.clicked.connect(self.on_click) 	
         self.setWindowTitle('Message box')    
-        self.label = QLabel('Hi dis is Deepthi',self)
+        #self.label = QLabel('Hi dis is Deepthi',self)
         self.show()
-        
+
+    def on_click(self):
+        print("Button Clicked!")           	        
+  
         
     def closeEvent(self, event):
         
