@@ -22,7 +22,7 @@ class Example(QWidget):
     def initUI(self):           	        
         self.setGeometry(300, 300, 250, 150)        	
         self.setWindowTitle('Message box')    
-        self.label = QLabel('Dit is het control center van Andre Jochemsen',self)
+        self.label = QLabel('Hi dis is Deepthi',self)
         self.show()
         
         
